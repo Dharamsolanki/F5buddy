@@ -1,0 +1,10 @@
+<?php
+
+  if( have_posts() ) {
+    while( have_posts() ) {
+      the_post(); // set the next post in the loop as the current post
+      
+      //Display the Title
+      the_title();
+    }
+  }
